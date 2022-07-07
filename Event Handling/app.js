@@ -10,6 +10,12 @@ const main = () => {
   // Create a page with a blank label and a text area. 
   // When someone types into the text area, change the label to show what the person has typed.
 
+    let label = document.getElementById('blank-label');
+    let input = document.getElementById('input');
+    let button = document.getElementById('submit');
+    let display = document.getElementById('text-display');
+
+
   //   Exercise 2:
   // Using the exercise above, replace the user's typing with the string below. 
   // Each time they press a key, a letter from the string below should display in the label instead. 
@@ -22,7 +28,13 @@ const main = () => {
   //    to learn the fundamentals of coding, app development, the leadership,
   //     and the life skills needed for a successful career and job market competitiveness.
 
+ 
 
+button.addEventListener('click', function(){
+
+//  input = (document.write("Code School is a hands-on class"));
+     display.innerHTML = input.value = ("Code School is a hands-on class designed to train individuals to be entry-level software developers within a six-month course. The minimum education requirement is at least a high school diploma or GED. Students work in a small classroom setting and use real-word technologies.to learn the fundamentals of coding, app development, the leadership, and the life skills needed for a successful career and job market competitiveness. ");
+});
 
   // Exercise 3:
   // Enhance your solution by creating a reset button that will erase everything from the label
