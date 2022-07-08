@@ -14,6 +14,7 @@ const main = () => {
     let input = document.getElementById('input');
     let button = document.getElementById('submit');
     let display = document.getElementById('text-display');
+    let resetButton = document.getElementById('reset-button');
 
 
   //   Exercise 2:
@@ -40,6 +41,7 @@ button.addEventListener('click', function(){
   // Enhance your solution by creating a reset button that will erase everything from the label
   //  so the user can start over.
 
+  // I included in a form in html rather than JavaScript.
 
   // Exercise 4: Repeating timer
   // Create a button with the text Start Countdown!.
@@ -48,6 +50,19 @@ button.addEventListener('click', function(){
   //  Display each number during the countdown each second (1000 ms),
   //   leading up to the word LIFTOFF!!!. Be sure to stop the timer once liftoff achieved.
 
+  // Not done.
+  function timer(){
+    var sec = 30;
+    var timer = setInterval(function(){   // added another function to set timer, more of a promises
+        document.getElementById('timer').innerHTML='00:'+sec; // sets in seconds
+        sec--;  // negatives make it count down to 0.
+        if (sec < 0) {
+            clearInterval(timer);
+            console.log("liftoff!");  // set in console
+        }
+    }, 1000); // milliseconds to count down
+}
+timer()
 
   //   Challenge 1
   // Create additional strings and load them in an array

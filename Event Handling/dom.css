@@ -1,10 +1,11 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blueviolet;
 }
 
 header{
-margin-left:33%;
-margin-top:6%;
+margin-left: 33%;
+margin-top: 6%;
 height: 50px;
 width: 40rem;
 }
@@ -18,3 +19,9 @@ h1{
     margin-left: 47.5%;
     margin-top: 7%;
 }
+
+h2{
+    margin-left: 40.5%;
+    margin-top: 3.9%;
+}
+
