@@ -52,17 +52,17 @@ button.addEventListener('click', function(){
 
   // Not done.
   function timer(){
-    var sec = 30;
+    var sec = 30;  // count of seconds, which is 30 seconds.
     var timer = setInterval(function(){   // added another function to set timer, more of a promises
         document.getElementById('timer').innerHTML='00:'+sec; // sets in seconds
         sec--;  // negatives make it count down to 0.
         if (sec < 0) {
-            clearInterval(timer);
+            clearInterval(timer); // sets interval to stop timer at 0.
             console.log("liftoff!");  // set in console
         }
     }, 1000); // milliseconds to count down
 }
-timer()
+timer() // calls the function to work as a time clock.
 
   //   Challenge 1
   // Create additional strings and load them in an array
